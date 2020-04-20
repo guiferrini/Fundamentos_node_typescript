@@ -15,8 +15,11 @@ interface TransactionDTO {
 class TransactionsRepository {
   private transactions: Transaction[];
 
+  private balance: Balance[];
+
   constructor() {
     this.transactions = [];
+    this.balance = [];
   }
 
   public all(): Transaction[] {
